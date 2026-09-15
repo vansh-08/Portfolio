@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09070b">
+  <meta name="description" content="Portfolio of Vansh Sharma, full-stack developer working across MERN, LLM systems, and iOS.">
+  <title>Vansh Sharma — Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress"><span id="progressBar"></span></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#home" aria-label="Vansh Sharma home">VS<span>/</span>26</a>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Stack</a>
+      <a href="#contact" class="nav-pill">Let's talk ↗</a>
+    </nav>
+    <button class="menu" id="navToggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <main>
+    <section class="cinematic" id="home">
+      <canvas id="scene" aria-hidden="true"></canvas>
+      <div class="scene-vignette" aria-hidden="true"></div>
+      <div class="hero">
+        <div class="hero-kicker"><span>01</span> Full-Stack Developer · Chandigarh, India</div>
+        <h1>Vansh<br><em>Sharma</em></h1>
+        <p class="hero-copy">I build LLM-integrated MERN systems — from red-teaming models for safety to shipping the product on top of them.</p>
+        <div class="hero-actions">
+          <a class="magnetic btn-light" href="#work">Enter the work <span>↘</span></a>
+          <a class="text-link" href="#contact">Get in touch <span>↗</span></a>
+        </div>
+        <div class="scroll-cue"><span>Scroll to explore</span><i></i></div>
+      </div>
+      <div class="hero-side">
+        <div class="side-line"></div>
+        <span>BUILD / TEST / SHIP</span>
+      </div>
+    </section>
+
+    <section class="statement" id="about">
+      <div class="section-number">02</div>
+      <div class="statement-inner reveal">
+        <p class="eyebrow">About</p>
+        <h2>Computer science graduate who <em>ships</em>, not just studies.</h2>
+        <p class="lead">I'm a Computer Science graduate (B.E., Chitkara University) with hands-on full-stack experience across the MERN stack, TypeScript, and a solid grounding in data structures and algorithms. Recently I've been split between building scalable backend systems, evaluating large language models for safety and reliability, and writing native iOS apps.</p>
+        <p class="lead">Most of what I build ends up touching three things: real users, real data, and — increasingly — an LLM in the middle of the workflow. I care about making that combination secure, fast, and boring in the best way.</p>
+      </div>
+    </section>
+
+    <section class="experience-section">
+      <div class="section-number">03</div>
+      <div class="experience-wrap">
+        <p class="eyebrow">Experience</p>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">SEP 2025 — JUN 2026</div>
+          <div><h3>Software Developer Apprentice</h3><p class="org">TestingXperts · Chandigarh</p><p>Built scalable, LLM-integrated MERN applications using microservices and Docker. Evaluated BrainLLM with the Promptfoo framework, configuring custom rubrics and red-teaming for PII and harmful-content risks.</p></div>
+          <span class="index">01</span>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">FEB 2025 — MAR 2025</div>
+          <div><h3>iOS Developer Intern</h3><p class="org">Infosys · Mysore</p><p>Contributed to a Fleet Management System app in Swift, UIKit, and Core Data, working in Agile/Scrum sprints with daily stand-ups.</p></div>
+          <span class="index">02</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="section-number">04</div>
+      <div class="work-head reveal"><div><p class="eyebrow">Selected Work</p><h2>Things I've<br><em>built recently.</em></h2></div><span class="work-count">03 / 03</span></div>
+
+      <div class="project-stack">
+        <article class="project-card reveal">
+          <div class="project-art art-solar"><span class="art-label">PWA / INVENTORY</span><div class="sun"></div><div class="grid-lines"></div></div>
+          <div class="project-meta"><span>Latest · Jun–Sep 2026</span><span>01</span></div>
+          <h3>SolarStock</h3><p class="project-sub">Solar equipment inventory PWA</p>
+          <p class="project-desc">A mobile-first, offline-capable inventory system for tracking solar equipment across multiple warehouses. Installable as a PWA, with role-based access, a live low-stock alert dashboard, and Firestore's offline cache.</p>
+          <ul class="tags"><li>React 18</li><li>Vite</li><li>Tailwind CSS</li><li>Firebase</li><li>Firestore</li><li>Recharts</li><li>Workbox</li></ul>
+          <div class="project-links"><a href="https://github.com/vansh-08/mnmt" target="_blank" rel="noopener">Code ↗</a><a href="https://mnmt-two.vercel.app/" target="_blank" rel="noopener">Live app ↗</a></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-pulse"><span class="art-label">MERN / AI</span><div class="pulse-ring"></div><div class="pulse-ring two"></div><div class="pulse-core">AI</div></div>
+          <div class="project-meta"><span>Product</span><span>02</span></div>
+          <h3>Delivery Pulse</h3><p class="project-sub">Full-stack DSR platform</p>
+          <p class="project-desc">A full-stack platform for Daily Status Report management with Microsoft OAuth 2.0 (PKCE) SSO and automated user provisioning. Integrates Gemini 2.5 Flash within a microservices architecture.</p>
+          <ul class="tags"><li>MERN</li><li>Gemini API</li><li>Docker Compose</li><li>Joi</li><li>Zod</li><li>React Hook Form</li></ul>
+          <div class="project-links"><a href="https://github.com/vansh-08/Delivery-pulse" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-med"><span class="art-label">SWIFT / IOS</span><div class="phone"><span>MED</span><b>DOCS</b><i>⌁</i></div></div>
+          <div class="project-meta"><span>iOS · App Store</span><span>03</span></div>
+          <h3>MedDocs</h3><p class="project-sub">Personal medical records app</p>
+          <p class="project-desc">A secure, user-friendly iOS app for organizing and quickly accessing essential medical records, with structured tracking for upcoming appointments and prescribed regimens.</p>
+          <ul class="tags"><li>Swift</li><li>UIKit</li><li>Core Data</li></ul>
+          <div class="project-links"><a href="https://apps.apple.com/my/app/meddocs/id6745161376" target="_blank" rel="noopener">App Store ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="section-number">05</div>
+      <div class="skills-inner">
+        <p class="eyebrow">The stack</p>
+        <h2 class="reveal">Tools I reach for<br><em>when it matters.</em></h2>
+        <div class="skill-marquee" aria-hidden="true"><span>JAVASCRIPT · TYPESCRIPT · REACT · NODE · PYTHON · SWIFT · DOCKER · LLM · </span><span>JAVASCRIPT · TYPESCRIPT · REACT · NODE · PYTHON · SWIFT · DOCKER · LLM · </span></div>
+        <div class="skill-columns">
+          <div class="skill-group reveal"><span>Languages & Frameworks</span><div class="skill-tags"><b>JavaScript</b><b>TypeScript</b><b>C++</b><b>Python</b><b>Swift</b><b>React.js</b><b>Node.js</b><b>Express.js</b><b>MongoDB</b><b>SQL</b><b>HTML5</b><b>CSS</b><b>Zod</b></div></div>
+          <div class="skill-group reveal"><span>Tools & Platforms</span><div class="skill-tags"><b>Git</b><b>Docker</b><b>Firebase</b><b>Promptfoo</b><b>Gemini API</b><b>node-cron</b><b>Jira</b><b>Figma</b><b>Vercel</b></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts">
+      <div class="section-number">06</div>
+      <div class="facts-grid">
+        <div class="fact reveal"><small>EDUCATION</small><strong>8.2</strong><p>B.E. Computer Science<br>Chitkara University · 2022–2026</p></div>
+        <div class="fact reveal"><small>SHIPPED</small><strong>3+</strong><p>Products across web,<br>AI systems and iOS</p></div>
+        <div class="fact reveal"><small>COMMUNITY</small><strong>10+</strong><p>Tech & non-tech events<br>organized</p></div>
+        <div class="fact reveal"><small>CERTIFIED</small><strong>02</strong><p>Claude Code in Action<br>Claude 101</p></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-number">07</div>
+      <div class="contact-inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build<br><em>something.</em></h2>
+        <p>Open to full-stack, backend, and LLM-systems roles.</p>
+        <a class="big-email magnetic" href="mailto:sharmavansh7942@gmail.com">sharmavansh7942@gmail.com <span>↗</span></a>
+        <div class="socials"><a href="https://github.com/vansh-08" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/vansh-sharma-5bb51a246/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://leetcode.com/u/vansh-08/" target="_blank" rel="noopener">LeetCode ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Vansh Sharma</span><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
